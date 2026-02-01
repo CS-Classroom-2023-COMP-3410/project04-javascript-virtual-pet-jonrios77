@@ -1,0 +1,86 @@
+/* 1. Basic Page Setup */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0f2f1; /* Light teal background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* 2. The Main Dashboard Card */
+#game-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 350px;
+}
+
+/* 3. The Pet (The Duck) */
+#pet {
+    width: 150px;
+    height: 150px;
+    background-size: contain;
+    border: 4px solid #333;
+    border-radius: 50%;
+    margin: 20px auto;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    transition: all 0.5s ease; 
+}
+
+/* 4. The Stats Area */
+#pet-status {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+}
+
+#pet-status p {
+    margin: 5px 0;
+    font-weight: bold;
+    color: #444;
+}
+
+/* 5. Button Styling */
+#controls {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+button {
+    padding: 12px 18px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.2s, background-color 0.2s;
+    background-color: #4db6ac;
+    color: white;
+}
+
+button:hover {
+    background-color: #26a69a;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button span {
+    font-size: 18px;
+}
